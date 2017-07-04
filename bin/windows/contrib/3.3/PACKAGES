@@ -1,3 +1,9 @@
+Package: dir2json
+Version: 2.1.0
+Imports: shiny, rChoiceDialogs
+Suggests: knitr, rmarkdown, testthat
+License: GPL-3
+
 Package: expansions
 Version: 1.2
 Depends: R (>= 3.0.0)
