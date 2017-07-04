@@ -1,0 +1,9 @@
+Package: expansions
+Version: 1.2
+Depends: R (>= 3.0.0)
+Imports: Rcpp (>= 0.11.5)
+LinkingTo: Rcpp
+Suggests: testthat, knitr, rmarkdown
+License: GPL (>= 2)
+Archs: i386, x64
+
