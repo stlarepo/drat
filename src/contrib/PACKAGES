@@ -16,3 +16,11 @@ License: GPL (>= 2)
 MD5sum: f2ffa5fc1201cff98e21ddcc2b9c958d
 NeedsCompilation: yes
 
+Package: jsonAccess
+Version: 0.1.1
+Imports: jsonlite, magrittr
+Suggests: knitr, rmarkdown
+License: GPL-3 + file LICENSE
+MD5sum: d64e8846c0c6ad35a4a5755c0ff648ad
+NeedsCompilation: no
+

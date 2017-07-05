@@ -13,3 +13,9 @@ Suggests: testthat, knitr, rmarkdown
 License: GPL (>= 2)
 Archs: i386, x64
 
+Package: jsonAccess
+Version: 0.1.1
+Imports: jsonlite, magrittr
+Suggests: knitr, rmarkdown
+License: GPL-3 + file LICENSE
+
