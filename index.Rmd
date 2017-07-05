@@ -1,0 +1,67 @@
+---
+title: "stlarepo"
+author: "Stéphane Laurent"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, collapse=TRUE)
+```
+
+# Current content of `stlarepo`
+
+
+## expansions
+
+Expansions of integer and real numbers, and odometers.
+
+See demo at <http://stla.github.io/stlapblog/posts/expansions_package.html>. 
+
+
+## dir2json 
+
+Hierarchical structure of a folder as a JSON string, and a Shiny application.  Also returns the tree view of a folder.
+
+```{r, comment=NA, prompt=TRUE}
+library(dir2json)
+cat(dir2json("src"))
+```
+
+```{r, comment=NA, prompt=TRUE}
+cat(dir2tree("src"))
+```
+
+```{r, comment=NA, prompt=TRUE}
+cat(dir2tree("src", vertical=TRUE))
+```
+
+```{r, prompt=TRUE, eval=FALSE}
+dir2json::shinyDirTree(".")
+```
+
+![](https://i.stack.imgur.com/h4Ce8.png)
+
+
+## jsonAccess 
+
+Access directly to values and array elements in a JSON string.
+
+See demo at <https://github.com/stla/jsonAccess>.
+
+
+# Installation 
+
+To install a package, e.g. `expansions`: 
+
+```r
+drat::addRepo("stlarepo")
+install.packages("expansions")
+```
+
+Windows users: the `expansions` package requires Rtools. If you have not set the Rtools path in your environment variables, run `devtools::find_rtools()` before `install.packages`. 
+
+
+# System requirements
+
+These packages use some DLLs. On Windows, they are standalone. On Linux, they are linked to the `ghc` dynamic libraries. 
