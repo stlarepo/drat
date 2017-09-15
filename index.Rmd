@@ -35,7 +35,7 @@ cat(dir2tree("src"))
 ```
 
 ```{r, comment=NA, prompt=TRUE}
-cat(dir2tree("src", vertical=TRUE))
+cat(dir2tree(".", vertical=TRUE, depth=1))
 ```
 
 ```{r, prompt=TRUE, eval=FALSE}
@@ -56,7 +56,7 @@ See demo at <https://github.com/stla/jsonAccess>.
 
 Young tableaux.
 
-```{r}
+```{r, prompt=TRUE, comment=NA}
 library(tableaux)
 shape <- c(3,2)
 ( tableaux <- standardYoungTableaux(shape) )
@@ -69,7 +69,7 @@ dualTableau(tableaux[[5]])
 
 Skew tableaux.
 
-```{r}
+```{r, prompt=TRUE, comment=NA}
 library(skewtableaux)
 skewtab <- skewtableau(list(3,c(1,1)), list(1,c(2,3)))
 cat(asciiSkewTableau(skewtab))
