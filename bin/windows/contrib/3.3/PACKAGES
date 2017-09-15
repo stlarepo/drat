@@ -19,3 +19,13 @@ Imports: jsonlite, magrittr
 Suggests: knitr, rmarkdown
 License: GPL-3 + file LICENSE
 
+Package: skewtableaux
+Version: 0.1.0
+Imports: purrr
+License: GPL-3
+
+Package: tableaux
+Version: 0.1.0
+Imports: purrr
+License: GPL-3
+
