@@ -2,7 +2,9 @@
 title: "stlarepo"
 author: "Stéphane Laurent"
 date: "`r Sys.Date()`"
-output: html_document
+output: 
+  html_document: 
+    toc: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -48,6 +50,31 @@ dir2json::shinyDirTree(".")
 Access directly to values and array elements in a JSON string.
 
 See demo at <https://github.com/stla/jsonAccess>.
+
+
+## tableaux
+
+Young tableaux.
+
+```{r}
+library(tableaux)
+shape <- c(3,2)
+( tableaux <- standardYoungTableaux(shape) )
+cat(asciiTableau(tableaux[[5]]))
+dualTableau(tableaux[[5]])
+```
+
+
+## skewtableaux 
+
+Skew tableaux.
+
+```{r}
+library(skewtableaux)
+skewtab <- skewtableau(list(3,c(1,1)), list(1,c(2,3)))
+cat(asciiSkewTableau(skewtab))
+skewTableauShape(skewtab)
+```
 
 
 # Installation 
