@@ -1,0 +1,4 @@
+Package: delaunayadjacency
+Version: 0.1.0
+Imports: clipr, magrittr, readr
+License: GPL-3

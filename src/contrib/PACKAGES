@@ -1,3 +1,10 @@
+Package: delaunayadjacency
+Version: 0.1.0
+Imports: clipr, magrittr, readr
+License: GPL-3
+MD5sum: 576dd827762096da3c0118bc87752826
+NeedsCompilation: no
+
 Package: dir2json
 Version: 2.1.0
 Imports: shiny, rChoiceDialogs
@@ -37,4 +44,3 @@ Imports: purrr
 License: GPL-3
 MD5sum: d4ab6929cfef29b098b06274c2285c0f
 NeedsCompilation: no
-
